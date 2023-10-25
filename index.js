@@ -22,7 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
         iframe = document.createElement('iframe');
         iframe.allow="autoplay; camera; microphone";
         iframe.src = 'https://broskad.github.io/anitech_web_landmarks_collection/';
-        iframe.id = 'iframe-video';
+        iframe.width  = window.innerWidth;
+        iframe.height = window.innerHeight;
         document.getElementById("iframe-place").appendChild(iframe);
     });
 
